@@ -1,2 +1,2 @@
 # ML_From_Scratch
-Going to learn Machine Learning from scratch
+Documenting my machine learning journey as I work through Andrew Ng's specialization.
