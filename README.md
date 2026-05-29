@@ -6,9 +6,19 @@ I am currently learning through Andrew Ng's Machine Learning courses and impleme
 
 The goal of this repository is to build a clear record of the topics I study, the code I write, and the concepts I understand along the way.
 
-## Current Topics
+## Progress
 
-### Linear Regression
+| Topic                      | Status      | Description                                                                                                       |
+| -------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------- |
+| Simple Linear Regression   | Completed   | Implemented linear regression with one variable using gradient descent                                            |
+| Multiple Linear Regression | In Progress | Extending linear regression to multiple features, feature scaling, feature engineering, and polynomial regression |
+| Logistic Regression        | Planned     | Classification using logistic regression                                                                          |
+| Regularization             | Planned     | Reducing overfitting using regularization techniques                                                              |
+| Neural Networks            | Planned     | Basic neural network concepts and implementation                                                                  |
+
+## Topics Covered
+
+### Simple Linear Regression
 
 Implemented simple linear regression from scratch using:
 
@@ -25,6 +35,19 @@ This includes:
 * updating parameters using gradient descent
 * visualizing the fitted regression line
 
+### Multiple Linear Regression
+
+Currently working on multiple linear regression, including:
+
+* multiple input features
+* vectorized prediction
+* cost function for multiple variables
+* gradient descent with multiple variables
+* feature scaling
+* learning rate tuning
+* feature engineering
+* polynomial regression
+
 ## Learning Goals
 
 Through this repository, I aim to:
@@ -33,6 +56,7 @@ Through this repository, I aim to:
 * implement algorithms manually before using libraries like scikit-learn
 * document my learning process clearly
 * build a strong foundation for more advanced ML and AI topics
+* compare manual implementations with library-based implementations later
 
 ## Tools Used
 
@@ -46,14 +70,12 @@ Through this repository, I aim to:
 
 Some topics I plan to add as I continue learning:
 
-* Multiple Linear Regression
 * Logistic Regression
 * Classification
 * Regularization
 * Neural Networks
 * Model Evaluation
 * Overfitting and Underfitting
-* Feature Scaling
 * scikit-learn implementations for comparison
 
 ## Note
