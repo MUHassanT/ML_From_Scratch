@@ -1,4 +1,4 @@
-# Week 2: Multiple Linear Regression
+# Multiple Linear Regression
 
 This folder contains my implementation of multiple linear regression from scratch.
 
