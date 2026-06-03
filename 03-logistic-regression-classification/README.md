@@ -61,6 +61,12 @@ The model achieves around **80% accuracy** on the toy dataset.
 
 Since the dataset is small and manually created, the purpose of this notebook is not to build a production-level classifier. The main goal is to understand the core logic behind logistic regression.
 
+## Evaluation Note
+
+The accuracy reported in this notebook is measured on a small toy dataset. The purpose is to understand the logic of logistic regression, not to build a production-level classifier.
+
+In future projects, I plan to use proper train, validation, and test splits to evaluate how well models generalize to unseen data.
+
 ## Visualizations
 
 The notebook includes:
