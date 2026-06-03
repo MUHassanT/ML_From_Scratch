@@ -11,9 +11,9 @@ The goal of this repository is to build a clear record of the topics I study, th
 | Topic                      | Status      | Description                                                                                                       |
 | -------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------- |
 | Simple Linear Regression   | Completed   | Implemented linear regression with one variable using gradient descent                                            |
-| Multiple Linear Regression | In Progress | Extending linear regression to multiple features, feature scaling, feature engineering, and polynomial regression |
-| Logistic Regression        | Planned     | Classification using logistic regression                                                                          |
-| Regularization             | Planned     | Reducing overfitting using regularization techniques                                                              |
+| Multiple Linear Regression | Completed | Extending linear regression to multiple features, feature scaling, feature engineering, and polynomial regression |
+| Logistic Regression        | Completed     | Classification using logistic regression                                                                          |
+| Regularization             | Completed     | Reducing overfitting using regularization techniques                                                              |
 | Neural Networks            | Planned     | Basic neural network concepts and implementation                                                                  |
 
 ## Topics Covered
