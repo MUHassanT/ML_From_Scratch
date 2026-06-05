@@ -87,22 +87,22 @@ The project includes data preprocessing, train/test splitting, feature normaliza
 
 1. Clone the repository.
 
-Command:
+    Command:
 
-git clone https://github.com/MUHassanT/ML_From_Scratch.git
-cd ML_From_Scratch
+    git clone https://github.com/MUHassanT/ML_From_Scratch.git
+    cd ML_From_Scratch
 
 2. Install the required packages.
 
-Command:
+    Command:
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 3. Open Jupyter Notebook.
 
-Command:
+    Command:
 
-jupyter notebook
+    jupyter notebook
 
 4. Open any topic folder and run the notebook cells from top to bottom.
 
