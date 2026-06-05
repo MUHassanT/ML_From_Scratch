@@ -73,6 +73,16 @@ This includes:
 - Comparing different lambda values
 - Understanding why training accuracy alone is not enough
 
+## Projects
+
+### Heart Disease Classifier from Scratch
+
+A binary classification project where I implemented logistic regression from scratch using NumPy on the UCI Heart Disease dataset.
+
+The project includes data preprocessing, train/test splitting, feature normalization, gradient descent, and evaluation using accuracy, precision, recall, F1 score, and a confusion matrix.
+
+[View project](projects/01-heart-disease-classifier)
+
 ## How to Run
 
 1. Clone the repository.
