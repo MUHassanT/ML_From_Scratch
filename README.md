@@ -8,13 +8,19 @@ The goal is to understand how the algorithms work internally before using higher
 
 ## Progress
 
-| Topic | Status | Description |
-| --- | --- | --- |
-| Simple Linear Regression | Completed | Implemented linear regression with one variable using gradient descent |
-| Multiple Linear Regression | Completed | Extended linear regression to multiple features, feature scaling, learning rate tuning, feature engineering, and polynomial regression |
-| Logistic Regression | Completed | Implemented binary classification using logistic regression |
-| Overfitting and Regularization | Completed | Explored polynomial features, overfitting, and regularized logistic regression |
-| Neural Networks | Planned | Basic neural network concepts and implementation |
+| Topic                                | Status      | Description                                                                                                                            |
+| ------------------------------------ | ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Simple Linear Regression             | Completed   | Implemented linear regression with one variable using gradient descent                                                                 |
+| Multiple Linear Regression           | Completed   | Extended linear regression to multiple features, feature scaling, learning rate tuning, feature engineering, and polynomial regression |
+| Logistic Regression                  | Completed   | Implemented binary classification using logistic regression                                                                            |
+| Overfitting and Regularization       | Completed   | Explored polynomial features, overfitting, and regularized logistic regression                                                         |
+| Neural Networks                      | In Progress | Learning basic neural network concepts and implementation                                                                              |
+| Advice for Applying Machine Learning | Planned     | Model evaluation, bias and variance, error analysis, and improving model performance                                                   |
+| Decision Trees                       | Planned     | Decision trees, random forests, and boosted trees                                                                                      |
+| Unsupervised Learning                | Planned     | Clustering and anomaly detection                                                                                                       |
+| Recommender Systems                  | Planned     | Collaborative filtering and content-based recommender systems                                                                          |
+| Reinforcement Learning               | Planned     | Basics of reinforcement learning and state-action value functions                                                                      |
+
 
 ## Topics Covered
 
