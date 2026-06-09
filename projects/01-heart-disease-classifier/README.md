@@ -90,6 +90,10 @@ The confusion matrix values were:
 
 ## Visualizations
 
+### Metrics Summary
+
+![Metrics Summary](assets/plots/metrics-summary.png)
+
 ### Cost During Training
 
 ![Cost During Training](assets/plots/cost-history.png)
