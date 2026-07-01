@@ -38,9 +38,9 @@ visually made the math click in a way that reading about it didn't.
 | Neural Networks — TensorFlow Training | ✅ Done | Why logits + from_logits=True is numerically more stable than softmax in the output layer |
 | Neural Networks — Multiclass & Softmax | ✅ Done | How sparse categorical cross-entropy handles multiclass problems and why the output layer stays linear |
 | Neural Networks — Backpropagation | ✅ Done | That delta2 = a2 - y is an exact result, not an approximation — the chain rule cancels cleanly for sigmoid + binary cross-entropy |
-| Advice for Applying ML | 🔲 Planned | Bias-variance tradeoff, error analysis, improving model performance |
-| Decision Trees | 🔲 Planned | Decision trees, random forests, boosted trees |
-| Unsupervised Learning | 🔲 Planned | Clustering and anomaly detection |
+| Advice for Applying ML | ✅ Done | Bias-variance tradeoff, error analysis, improving model performance |
+| Decision Trees | ✅ Done | Decision trees, random forests, boosted trees |
+| Unsupervised Learning | ✅ Done | Clustering and anomaly detection |
 | Recommender Systems | 🔲 Planned | Collaborative filtering, content-based filtering |
 | Reinforcement Learning | 🔲 Planned | State-action value functions |
 
@@ -62,7 +62,15 @@ ML_From_Scratch/
 │       ├── 01-neural-networks-forward-propagation/
 │       ├── 02_tensorflow_training_workflow/
 │       ├── 03_multiclass_softmax_activations/
-│       └── 04-neural-networks-back-propagation/
+│       ├── 04-neural-networks-back-propagation/
+│       ├── 05-model-selection-and-evaluation/
+│       ├── 06_bias_variance_learning_curves/
+│       ├── 07_ml_development_process/
+│       └── 08-decision-trees/
+│
+├── course-3-unsupervised-learning-recommenders-reinforcement-learning/
+│   ├── 01-clustering/
+│   └── 02-anomaly-detection/
 │
 ├── projects/
 │   └── 01-heart-disease-classifier/
@@ -82,9 +90,6 @@ cd ML_From_Scratch
 pip install -r requirements.txt
 jupyter notebook
 ```
-
-Open any folder and run cells top to bottom.
-
 ---
 
 ## Stack
