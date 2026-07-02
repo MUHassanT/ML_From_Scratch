@@ -87,21 +87,13 @@ The notebook derives and discusses:
 ### Entropy
 
 $$
-H(S)
-====
-
--\sum_i p_i \log_2(p_i)
+H(S) = -\sum_i p_i \log_2(p_i)
 $$
 
 ### Information Gain
 
 $$
-IG
-==
-
-## H(\text{Parent})
-
-H(\text{Children})
+IG = H(\text{Parent}) - H(\text{Children})
 $$
 
 ### Bootstrap Sampling
@@ -115,44 +107,20 @@ $$
 ### Gradient Boosting Update Rule
 
 $$
-F_m(x)
-======
-
-F_{m-1}(x)
-+
-\eta h_m(x)
+F_m(x) = F_{m-1}(x) + \eta h_m(x)
 $$
 
 ### XGBoost Objective Function
 
 $$
-\text{Obj}
-==========
-
-L
-+
-\Omega(f)
+\text{Obj} = L + \Omega(f)
 $$
 
 ### XGBoost Split Gain
 
 $$
-\text{Gain}
-===========
-
-\frac{1}{2}
-\left(
-\frac{G_L^2}{H_L+\lambda}
-+
-\frac{G_R^2}{H_R+\lambda}
--------------------------
-
-\frac{G^2}{H+\lambda}
-\right)
--\gamma
+\text{Gain} = \frac{1}{2}\left(\frac{G_L^2}{H_L+\lambda} + \frac{G_R^2}{H_R+\lambda} - \frac{G^2}{H+\lambda}\right) - \gamma
 $$
-
----
 
 ## Technologies Used
 
