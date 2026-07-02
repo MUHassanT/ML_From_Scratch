@@ -1,56 +1,25 @@
 # ML From Scratch
 
-I am a first-year CS student working through machine learning by implementing
-algorithms from scratch before touching any high-level libraries.
+A structured collection of machine learning implementations, experiments, and projects built while studying supervised learning, neural networks, unsupervised learning, recommender systems, and reinforcement learning.
 
-This repository is a learning journal, not a polished portfolio. Every notebook
-prioritizes understanding over brevity — the goal is to be able to derive and
-implement each algorithm from first principles, not to call sklearn in three lines.
+This repository is focused on understanding machine learning at the level of mathematics, implementation, and practical evaluation. The goal is not only to complete coursework, but to build the habit of turning concepts into working code and to develop a portfolio that is useful for research discussions, internship applications, and academic mentorship.
 
----
+## Overview
 
-## Projects
+`ML_From_Scratch` documents my progression through classical machine learning and introductory deep learning. The repository combines:
 
-### Heart Disease Classifier
-*Logistic regression from scratch on the UCI Heart Disease dataset*
+* algorithm implementations
+* notebook-based experimentation
+* mathematical intuition and derivations
+* evaluation and model comparison
+* a standalone applied project
 
-Built without any ML libraries. Implements sigmoid, binary cross-entropy loss,
-gradient descent, and evaluation metrics (accuracy, precision, recall, F1,
-confusion matrix) entirely in NumPy.
-
-The most useful thing I learned: without feature normalization, gradient descent
-either diverges or converges so slowly it appears broken. Seeing this happen
-visually made the math click in a way that reading about it didn't.
-
-[View project →](projects/01-heart-disease-classifier)
-
----
-
-## Course Progress
-
-| Topic | Status | What I actually learned |
-|-------|--------|------------------------|
-| Simple Linear Regression | ✅ Done | How gradient descent works geometrically — the cost surface, not just the update rule |
-| Multiple Linear Regression | ✅ Done | Why feature scaling is necessary, not just recommended — unscaled features make the cost surface extremely elongated and gradient descent zigzags |
-| Logistic Regression | ✅ Done | How binary cross-entropy loss connects to maximum likelihood estimation |
-| Overfitting and Regularization | ✅ Done | What lambda is actually doing — penalizing large weights, not penalizing complexity directly |
-| Neural Networks — Forward Propagation | ✅ Done | How data flows through layers and why caching z and a during the forward pass is necessary for backpropagation |
-| Neural Networks — TensorFlow Training | ✅ Done | Why logits + from_logits=True is numerically more stable than softmax in the output layer |
-| Neural Networks — Multiclass & Softmax | ✅ Done | How sparse categorical cross-entropy handles multiclass problems and why the output layer stays linear |
-| Neural Networks — Backpropagation | ✅ Done | That delta2 = a2 - y is an exact result, not an approximation — the chain rule cancels cleanly for sigmoid + binary cross-entropy |
-| Advice for Applying ML | ✅ Done | Bias-variance tradeoff, error analysis, improving model performance |
-| Decision Trees | ✅ Done | Decision trees, random forests, boosted trees |
-| Unsupervised Learning | ✅ Done | Clustering and anomaly detection |
-| Recommender Systems | 🔲 Planned | Collaborative filtering, content-based filtering |
-| Reinforcement Learning | 🔲 Planned | State-action value functions |
-
----
+The emphasis is on clarity, correctness, and independent understanding.
 
 ## Repository Structure
 
 ```text
 ML_From_Scratch/
-│
 ├── course-1-supervised-machine-learning/
 │   ├── 01-linear-regression-one-variable/
 │   ├── 02-multiple-linear-regression/
@@ -58,50 +27,132 @@ ML_From_Scratch/
 │   └── 04-overfitting-and-regularization/
 │
 ├── course-2-advanced-learning-algorithms/
-│   └── 01-neural-networks/
-│       ├── 01-neural-networks-forward-propagation/
-│       ├── 02_tensorflow_training_workflow/
-│       ├── 03_multiclass_softmax_activations/
-│       ├── 04-neural-networks-back-propagation/
-│       ├── 05-model-selection-and-evaluation/
-│       ├── 06_bias_variance_learning_curves/
-│       ├── 07_ml_development_process/
-│       └── 08-decision-trees/
+│   ├── 01-neural-networks-forward-propagation/
+│   ├── 02_tensorflow_training_workflow/
+│   ├── 03_multiclass_softmax_activations/
+│   ├── 04-neural-networks-back-propagation/
+│   ├── 05-model-selection-and-evaluation/
+│   ├── 06-bias_variance_learning_curves/
+│   ├── 07_ml_development_process/
+│   └── 08-decision-trees/
 │
 ├── course-3-unsupervised-learning-recommenders-reinforcement-learning/
 │   ├── 01-clustering/
-│   └── 02-anomaly-detection/
+│   ├── 02-anomaly-detection/
+│   ├── 03-recommender-systems/
+│   └── 04-reinforcement-learning/
 │
 ├── projects/
-│   └── 01-heart-disease-classifier/
+│   └── heart-disease-classifier/
 │
 ├── README.md
 ├── requirements.txt
 └── LICENSE
 ```
 
+## What This Repository Covers
+
+### Supervised Learning
+
+* Linear regression with one variable
+* Multiple linear regression
+* Logistic regression for classification
+* Bias, variance, and regularization
+
+### Advanced Learning Algorithms
+
+* Neural network forward propagation
+* Backpropagation
+* Softmax and multiclass classification
+* TensorFlow training workflow
+* Model selection and evaluation
+* Learning curves and error analysis
+* Machine learning development process
+* Decision trees
+
+### Unsupervised Learning, Recommenders, and Reinforcement Learning
+
+* Clustering
+* Anomaly detection
+* Recommender systems
+* Reinforcement learning fundamentals
+
+## Technical Stack
+
+This repository uses:
+
+* Python
+* NumPy
+* Pandas
+* Matplotlib
+* SciPy
+* scikit-learn
+* TensorFlow
+* PyTorch
+* Gymnasium
+* ucimlrepo
+* Jupyter
+* ipykernel
+
+The code and notebooks are organized to support both learning and experimentation.
+
+## Learning Approach
+
+Each topic is treated as more than a checklist item. The focus is on:
+
+* understanding the underlying math
+* implementing core ideas in code
+* testing assumptions with experiments
+* comparing model behavior
+* documenting observations clearly
+
+This approach is meant to build depth rather than shallow familiarity.
+
+## Featured Project: [Heart Disease Classifier](project/heart-disease-classifier/)
+
+The main standalone project in this repository is the **Heart Disease Classifier**, an applied machine learning project focused on binary classification for medical risk prediction. The core model implementation was built without scikit-learn.
+
+### Project Highlights
+
+* built on a real-world dataset from the UCI Machine Learning Repository
+* implemented with Python and NumPy-first modeling choices
+* includes data loading, preprocessing, training, and evaluation
+* evaluates performance with more than just accuracy, with attention to precision, recall, and overall classification behavior
+
+### Why This Project Matters
+
+This project marks the transition from course exercises to an applied workflow. It demonstrates how a model can be developed, tested, and evaluated on a practical dataset while keeping the implementation understandable and easy to inspect.
+
+## Skills Demonstrated
+
+* translating mathematical ideas into code
+* working with tabular data and numerical computation
+* evaluating classification and regression models
+* understanding optimization and learning dynamics
+* debugging notebook-based workflows
+* structuring technical work for review and portfolio use
+
+## Current Status
+
+This repository began with coursework, but its purpose is broader now. It is a growing implementation portfolio that reflects how I study machine learning: by rebuilding concepts, testing them, and extending them into projects.
+
+## Future Direction
+
+Planned future work may include:
+
+* additional machine learning projects
+* deeper experimentation with neural networks
+* more applied work in AI and cybersecurity
+* paper replication and research-style notebooks
+* stronger model evaluation and interpretability work
+* broader reinforcement learning experiments
+
+## Acknowledgements
+
+The structure and core topics in this repository were developed while completing the Machine Learning Specialization by DeepLearning.AI, taught by Andrew Ng. The implementations, organization, and project work in this repository are intended to go beyond passive course completion and reflect independent practice.
+
+## License
+
+This repository is licensed under the terms of the [LICENSE](LICENSE) file.
+
 ---
-
-## How to Run
-
-```bash
-git clone https://github.com/MUHassanT/ML_From_Scratch.git
-cd ML_From_Scratch
-pip install -r requirements.txt
-jupyter notebook
-```
----
-
-## Stack
-
-Python · NumPy · Matplotlib · Pandas · Jupyter · TensorFlow (Course 2 onwards)
-
----
-
-## Note
-
-Most early notebooks use small synthetic datasets — the point is the algorithm,
-not the data. Projects use real datasets to apply the same concepts to messier,
-more realistic problems.
-
-Code is written to be readable and correct, not fast. Optimization comes later.
