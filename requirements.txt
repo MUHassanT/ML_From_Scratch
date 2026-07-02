@@ -2,6 +2,10 @@ numpy
 pandas
 matplotlib
 scikit-learn
+tensorflow
+scipy
+ucimlrepo
+torch
+gymnasium
 jupyter
 ipykernel
-tensorflow
